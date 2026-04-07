@@ -50,16 +50,11 @@ export default function ContactsScreen() {
         text: "Edit",
         onPress: () => router.push(`/contact/${contact.id}`),
       },
-      {
-        text: "Delete",
-        style: "destructive",
-        onPress: () => confirmDelete(contact),
-      },
       { text: "Cancel", style: "cancel" },
     ]);
   }
 
-  function confirmDelete(contact) {
+  function handleDeletePress(contact) {
     Alert.alert("Delete contact?", `Remove ${contact.name}? This cannot be undone.`, [
       { text: "Cancel", style: "cancel" },
       {
@@ -73,6 +68,7 @@ export default function ContactsScreen() {
       },
     ]);
   }
+
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#EDF4FB" }}>
@@ -94,7 +90,7 @@ export default function ContactsScreen() {
               {contacts.length} connection{contacts.length !== 1 ? "s" : ""}
             </Text>
             <Text style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", marginTop: 2 }}>
-              Tap to view  ·  Hold to edit or delete
+              Tap to view  ·  Hold to edit
             </Text>
           </>
         )}

@@ -70,26 +70,17 @@ export default function FollowUpsScreen() {
   }
 
   function handleLongPress(event) {
-    Alert.alert(event.contactName, "What would you like to do?", [
+    Alert.alert("Delete follow-up?", `Remove follow-up for ${event.contactName}? This cannot be undone.`, [
+      { text: "Cancel", style: "cancel" },
       {
         text: "Delete",
         style: "destructive",
-        onPress: () => {
-          Alert.alert("Delete follow-up?", "This cannot be undone.", [
-            { text: "Cancel", style: "cancel" },
-            {
-              text: "Delete",
-              style: "destructive",
-              onPress: async () => {
-                await cancelFollowUpNotification(event.contactId, event.id);
-                await removeFollowUp(event.contactId, event.id);
-                await loadEvents();
-              },
-            },
-          ]);
+        onPress: async () => {
+          await cancelFollowUpNotification(event.contactId, event.id);
+          await removeFollowUp(event.contactId, event.id);
+          await loadEvents();
         },
       },
-      { text: "Cancel", style: "cancel" },
     ]);
   }
 

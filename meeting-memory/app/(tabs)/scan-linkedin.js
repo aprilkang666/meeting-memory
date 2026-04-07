@@ -2,7 +2,7 @@ import { CameraView, useCameraPermissions } from "expo-camera";
 import * as Linking from "expo-linking";
 import { router } from "expo-router";
 import { useState } from "react";
-import { Text, View } from "react-native";
+import { Alert, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { setLastScannedLinkedinUrl } from "../../src/storage/scan";
 import ActionButton from "../../src/components/ActionButton";

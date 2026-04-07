@@ -2,7 +2,7 @@
   "expo": {
     "name": "Notivate",
     "slug": "Notivate",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "meetingmemory",
@@ -10,10 +10,12 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.applebee.notivate",
+      "bundleIdentifier": "com.applebee.networkater",
       "infoPlist": {
-        "NSCameraUsageDescription": "We use the camera to scan LinkedIn QR codes when adding new contacts."
-      }
+        "NSCameraUsageDescription": "We use the camera to scan LinkedIn QR codes when adding new contacts.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "buildNumber": "3"
     },
     "android": {
       "adaptiveIcon": {
@@ -51,7 +53,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Meeting Memory to access your camera to scan LinkedIn QR codes."
+          "cameraPermission": "Allow Notivate to access your camera to scan LinkedIn QR codes."
         }
       ],
       [
@@ -64,6 +66,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "03bcba32-5ad7-40c2-bc00-3da7d9f60542"
+      }
     }
   }
 }
