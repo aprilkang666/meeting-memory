@@ -67,7 +67,6 @@ export default function TabLayout() {
         }}
       />
       {/* Hide workflow pages from the tab bar */}
-      <Tabs.Screen name="explore" options={{ href: null }} />
       <Tabs.Screen name="contact/[id]" options={{ href: null }} />
       <Tabs.Screen name="scan-linkedin" options={{ href: null }} />
       <Tabs.Screen name="follow-up-detail" options={{ href: null }} />

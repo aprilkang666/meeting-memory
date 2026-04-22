@@ -15,7 +15,7 @@
         "NSCameraUsageDescription": "We use the camera to scan LinkedIn QR codes when adding new contacts.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "3"
+      "buildNumber": "4"
     },
     "android": {
       "adaptiveIcon": {
