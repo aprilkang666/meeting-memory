@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Notivate",
-    "slug": "Notivate",
+    "name": "Notivater",
+    "slug": "Notivater",
     "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -53,7 +53,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Notivate to access your camera to scan LinkedIn QR codes."
+          "cameraPermission": "Allow Notivater to access your camera to scan LinkedIn QR codes."
         }
       ],
       [
