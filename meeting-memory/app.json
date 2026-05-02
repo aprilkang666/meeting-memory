@@ -15,7 +15,7 @@
         "NSCameraUsageDescription": "We use the camera to scan LinkedIn QR codes when adding new contacts.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "4"
+      "buildNumber": "6"
     },
     "android": {
       "adaptiveIcon": {
@@ -53,7 +53,8 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Notivate to access your camera to scan LinkedIn QR codes."
+          "cameraPermission": "Allow Notivate to access your camera to scan LinkedIn QR codes.",
+          "microphonePermission": false
         }
       ],
       [
@@ -61,7 +62,8 @@
         {
           "sounds": []
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
